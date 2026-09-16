@@ -85,6 +85,8 @@ More detail is available in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 
 The complete source code is not publicly available because the academic project was built upon pre-existing proprietary software supplied for educational purposes. The absence of the source is intentional and protects third-party authorship, company information, and personal data.
 
+The historical project is retained separately in the private repository [`daffwt221/PCSpeed`](https://github.com/daffwt221/PCSpeed). This link is included only to document that the archived project exists; it does not provide or imply public access. GitHub may display a `404` page to visitors who do not have permission to view a private repository.
+
 The included code samples were created specifically for this 2026 portfolio review. They are not the code submitted in 2023 and do not reconstruct private implementation details. The publication criteria are documented in [`samples/README.md`](samples/README.md).
 
 ## Selected Code Samples

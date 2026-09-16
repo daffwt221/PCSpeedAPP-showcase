@@ -35,4 +35,4 @@ The PCSpeed and PCSpeedAPP names and logo are included only to identify and docu
 
 ## Availability Statement
 
-The complete historical implementation is private and is not offered for download, reuse, or redistribution. This restriction does not diminish the student's academic contribution; it records the contribution honestly while respecting uncertain third-party rights and confidentiality.
+The complete historical implementation is retained in the private repository [`daffwt221/PCSpeed`](https://github.com/daffwt221/PCSpeed) and is not offered for download, reuse, or redistribution. Visitors without access may receive a `404` response from GitHub. This restriction does not diminish the student's academic contribution; it records the contribution honestly while respecting uncertain third-party rights and confidentiality.
