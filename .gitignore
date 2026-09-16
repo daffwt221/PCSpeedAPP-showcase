@@ -1,0 +1,26 @@
+# Never include private project material
+/PAP/
+/private-archive/
+*.zip
+*.sql
+!/samples/schema.sql
+*.sql.gz
+*.sqlite
+*.sqlite3
+*.log
+*.docx
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+**/config.local.php
+
+# Dependencies and tooling
+vendor/
+node_modules/
+.idea/
+.vscode/
+.vs/
+.DS_Store
+Thumbs.db
