@@ -29,9 +29,9 @@ I do not claim authorship of PGOSTEC or of the complete historical codebase. See
 
 ## Automatic SMS Notification
 
-The clearest demonstration in the 2023 PAP report is a repair order moving to a status configured to send an SMS. When staff save that order, the application calls the Vonage SMS API, displays a success message when the API reports success, and prepares the customer notification from the order and customer data. The report presents this as a way to keep customers informed when equipment is ready for collection and reduce manual follow-up.
+The clearest demonstration in the 2023 PAP report is changing a repair-order status and notifying the customer automatically. Each status can have SMS sending enabled and its own message text. When staff submit an order with an SMS-enabled status, the historical PHP flow loads that status message and the customer's stored phone number, then submits the message through the Vonage SMS API. After a successful API response, the application continues the order update and displays a success message. The feature was intended to keep customers informed when equipment is ready for collection and reduce manual follow-up.
 
-This is a historical proof of concept, not a claim that the service is active today. The report describes a paid Vonage API integration. This public repository does not include the historical application source, API credentials, or evidence of current operation. The independently written 2026 samples below neither reproduce nor validate that SMS integration. See [`docs/DEMO-SCRIPT.md`](docs/DEMO-SCRIPT.md) for a concise presentation flow.
+This is a historical proof of concept, not a claim that the service is active today. The report describes a paid Vonage API integration. In the historical code, the SMS request happens before the database update; if Vonage reports a send failure, the script exits before saving the order change. This public repository does not include the historical application source or evidence of current operation. The independently written 2026 samples below neither reproduce nor validate that SMS integration. See [`docs/DEMO-SCRIPT.md`](docs/DEMO-SCRIPT.md) for a concise presentation flow.
 
 ## Main Capabilities
 

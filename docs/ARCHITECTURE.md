@@ -35,7 +35,7 @@ MySQL or MariaDB stored the operational records used by the application. The pub
 2. The equipment and reported problem are recorded.
 3. A repair order is created with an initial status.
 4. Workshop staff update technical notes and progress.
-5. The order moves through diagnosis, repair, completion, and delivery. Saving a status configured for SMS can trigger a customer notification through the historical Vonage integration.
+5. The order moves through diagnosis, repair, completion, and delivery. Submitting an order with an SMS-enabled status triggers a Vonage request using that status's configured message. In the historical PHP flow, the request happens before the database update; a reported send failure exits before the order change is saved.
 6. A service document can be printed for operational use.
 
 This description represents the academic project's business flow, not the current implementation or practices of PCSpeed.
