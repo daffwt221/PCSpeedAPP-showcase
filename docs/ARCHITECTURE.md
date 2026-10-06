@@ -24,6 +24,7 @@ MySQL or MariaDB stored the operational records used by the application. The pub
 | Repair orders | Equipment intake, reported problems, and technical work |
 | Catalogue | Equipment types, brands, accessories, and statuses |
 | Workflow | Progress from reception through repair and delivery |
+| Notifications | Status-triggered SMS proof of concept through Vonage |
 | Documents | Repair summaries, labels, and print views |
 | Reporting | Operational lists and project reporting |
 | Administration | Authentication, backups, and supporting tools |
@@ -34,7 +35,8 @@ MySQL or MariaDB stored the operational records used by the application. The pub
 2. The equipment and reported problem are recorded.
 3. A repair order is created with an initial status.
 4. Workshop staff update technical notes and progress.
-5. The order moves through diagnosis, repair, completion, and delivery.
+5. The order moves through diagnosis, repair, completion, and delivery. Saving a status configured for SMS can trigger a customer notification through the historical Vonage integration.
 6. A service document can be printed for operational use.
 
 This description represents the academic project's business flow, not the current implementation or practices of PCSpeed.
+
