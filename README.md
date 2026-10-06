@@ -27,8 +27,15 @@ My work involved understanding an existing codebase, adapting business processes
 
 I do not claim authorship of PGOSTEC or of the complete historical codebase. See [`PROVENANCE.md`](PROVENANCE.md) for the publication boundary.
 
+## Automatic SMS Notification
+
+The clearest demonstration in the 2023 PAP report is a repair order moving to a status configured to send an SMS. When staff save that order, the application calls the Vonage SMS API, displays a success message when the API reports success, and prepares the customer notification from the order and customer data. The report presents this as a way to keep customers informed when equipment is ready for collection and reduce manual follow-up.
+
+This is a historical proof of concept, not a claim that the service is active today. The report describes a paid Vonage API integration. This public repository does not include the historical application source, API credentials, or evidence of current operation. The independently written 2026 samples below neither reproduce nor validate that SMS integration. See [`docs/DEMO-SCRIPT.md`](docs/DEMO-SCRIPT.md) for a concise presentation flow.
+
 ## Main Capabilities
 
+- Status-triggered SMS notification (Vonage proof of concept).
 - Customer registration and customer records.
 - Equipment, brand, accessory, and repair-status management.
 - Creation and tracking of repair and service orders.
@@ -36,7 +43,6 @@ I do not claim authorship of PGOSTEC or of the complete historical codebase. See
 - Status-based workshop workflow.
 - Printable repair documents and barcode labels.
 - Operational reports and database backup tools.
-- Proof-of-concept SMS integration.
 
 ## Technologies Used
 
@@ -125,3 +131,4 @@ The project and the decisions I would make differently today are discussed in [`
 ## Status
 
 This repository is a historical portfolio showcase, not an active product. PCSpeed and PGOSTEC are referenced only to explain the factual context of the 2023 project; no endorsement or current affiliation is implied.
+
